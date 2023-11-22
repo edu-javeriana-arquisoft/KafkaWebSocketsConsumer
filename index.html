@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kafka Producer</title>
+</head>
+
+<body>
+	<div id="app">
+		<h1>Apache Kafka - Consumer Example</h1>
+		<hr />
+
+		<div>
+			<h2>Broker address</h2>
+			<span>
+				<label for="kafka-server">Kafka Server</label>
+				<br />
+				<input type="text" id="kafka-server" />
+			</span>
+			<br />
+			<span>
+				<label for="kafka-topic">Topic</label>
+				<br />
+				<input type="text" id="kafka-topic" />
+			</span>
+		</div>
+
+		<hr />
+		<div>
+			<h2>Payload</h2>
+			<span>
+				<label for="user_guid">User GUID</label>
+				<br />
+				<input type="text" id="user_guid" />
+			</span>
+			<br />
+			<span>
+				<label for="topic">Category</label>
+				<br />
+				<input type="text" id="category" />
+			</span>
+		</div>
+
+		<hr />
+		<h3>Click this button to produce the event</h3>
+		<button id="produce">Send the payload</button>
+	</div>
+
+	<script type="module" src="/main.js"></script>
+</body>
+
+</html>
